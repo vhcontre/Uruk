@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Uruk.Hosts.Web.Global" Language="C#" %>
