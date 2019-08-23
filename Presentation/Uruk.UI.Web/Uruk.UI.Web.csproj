@@ -244,8 +244,6 @@
     <Compile Include="Services\BrowserConfig\IBrowserConfigService.cs" />
     <Compile Include="Services\Cache\CacheService.cs" />
     <Compile Include="Services\Cache\ICacheService.cs" />
-    <Compile Include="Services\Logging\ILoggingService.cs" />
-    <Compile Include="Services\Logging\LoggingService.cs" />
     <Compile Include="Services\Manifest\IManifestService.cs" />
     <Compile Include="Services\Manifest\ManifestService.cs" />
     <Compile Include="Services\OpenSearch\IOpenSearchService.cs" />
@@ -504,6 +502,10 @@
     <ProjectReference Include="..\..\Business\Uruk.Business\Uruk.Business.csproj">
       <Project>{be97972d-9abb-4c2c-b7be-7dcbe6170ffb}</Project>
       <Name>Uruk.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared\Uruk.Framework\Vitruvio.Framework.csproj">
+      <Project>{b2847ab3-d537-4c6c-a61b-5b48458bbcbc}</Project>
+      <Name>Vitruvio.Framework</Name>
     </ProjectReference>
     <ProjectReference Include="..\Uruk.UI.Process\Uruk.UI.Process.csproj">
       <Project>{8efc72ac-380c-4276-a9b3-fa100eeb7dc0}</Project>

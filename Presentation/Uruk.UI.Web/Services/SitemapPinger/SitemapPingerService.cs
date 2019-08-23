@@ -6,6 +6,7 @@
     using System.Web.Mvc;
     using Boilerplate.Web.Mvc;
     using Uruk.UI.Web.Constants;
+    using Vitruvio.Framework.Logging;
 
     public class SitemapPingerService : ISitemapPingerService
     {

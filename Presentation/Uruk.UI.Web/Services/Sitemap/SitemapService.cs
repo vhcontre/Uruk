@@ -6,6 +6,7 @@
     using Boilerplate.Web.Mvc;
     using Boilerplate.Web.Mvc.Sitemap;
     using Uruk.UI.Web.Constants;
+    using Vitruvio.Framework.Logging;
 
     /// <summary>
     /// Generates sitemap XML for the current site.
@@ -124,7 +125,7 @@
 
         protected override void LogWarning(Exception exception)
         {
-            this.loggingService.Log(exception);
+            this.loggingService.Error(exception);
         }
 
         #endregion

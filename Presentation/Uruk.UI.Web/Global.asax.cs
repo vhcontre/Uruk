@@ -5,8 +5,8 @@
     using System.Web.Optimization;
     using System.Web.Routing;
     using Boilerplate.Web.Mvc;
-    using Uruk.UI.Web.Services;
     using NWebsec.Csp;
+    using Vitruvio.Framework.Logging;
 
     public class MvcApplication : System.Web.HttpApplication
     {
@@ -48,7 +48,7 @@
                 reportDetails.StatusCode,
                 reportDetails.ViolatedDirective);
             CspViolationException exception = new CspViolationException(violationReportString);
-            DependencyResolver.Current.GetService<ILoggingService>().Log(exception);
+            DependencyResolver.Current.GetService<ILoggingService>().Error(exception);
         }
         
         /// <summary>
