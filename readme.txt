@@ -4,6 +4,8 @@
 
 Install-Package Microsoft.AspNet.WebApi -Version 5.2.7
 
+<-!! Verificacion !!->
+
 - Paso 2
 <System>.Framework
 
@@ -30,3 +32,8 @@ Install-Package Swashbuckle -Version 5.6.0
 <System>.Framework
 
 System.Runtime.Caching (Assembly)
+
+
+Install-Package Microsoft.AspNet.Identity.EntityFramework -Version 2.2.1
+Install-Package Microsoft.AspNet.Identity.Owin -Version 2.2.1
+ <package id="Microsoft.Owin.Security.Google" version="3.0.1" targetFramework="net46" />
