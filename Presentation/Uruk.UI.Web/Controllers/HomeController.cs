@@ -47,12 +47,14 @@
         [Route("", Name = HomeControllerRoute.GetIndex)][Authorize]
         public ActionResult Index()
         {
+            ViewBag.Data = "GIT: nueva-vista-home";
             return this.View(HomeControllerAction.Index);
         }
 
         [Route("about", Name = HomeControllerRoute.GetAbout)]
         public ActionResult About()
         {
+            ViewBag.Data = "GIT: nueva-vista-about";
             return this.View(HomeControllerAction.About);
         }
 
