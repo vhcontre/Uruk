@@ -54,6 +54,7 @@
         [Route("about", Name = HomeControllerRoute.GetAbout)]
         public ActionResult About()
         {
+            ViewBag.Data = "GIT: nueva-vista-about";
             return this.View(HomeControllerAction.About);
         }
 
